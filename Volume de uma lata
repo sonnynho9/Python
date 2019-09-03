@@ -1,0 +1,5 @@
+raio=float(input("entre com o raio"))
+altura=float(input("entre com a altura"))
+pi=3.14
+volume=pi*raio**2*altura
+print("O volume da lata é:", volume)
