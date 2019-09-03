@@ -1,0 +1,8 @@
+t=float(input("Tempo Gasto da Viagem = "))
+v=float(input("Velocidade Média durante a Viagem = "))
+d=t*v
+l=d/12
+print("O tempo gasto foi de",t,"horas")
+print("A velocidade média foi de",vm,"km/h")
+print("A distância percorrida é",d,"km")
+print("Foi gasto ",l,"litros de combustível")
