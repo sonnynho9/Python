@@ -1,0 +1,16 @@
+print("******************************")
+print("Jogo da Advinhação")
+print("******************************")
+numero_secreto=9
+condicao == sim
+while(condicao):
+    chute=int(input("Digite seu numero \n"))
+    if numero_secreto==chute:
+        print("Parabéns você acertou, seu bosta")
+        break
+    elif numero_secreto < chute:
+        print("A Resposta é menor")
+    elif numero_secreto > chute:
+        print("A Resposta é maior")
+else:
+      print("A Resposta, voce nao acertou.")
