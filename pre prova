@@ -1,0 +1,52 @@
+print("Edival Gonçalves Gomes")
+
+
+#Exercicio01
+print ("\n Exercicio 01")
+
+numA=(int(input("\n Digite o primeiro numero: ")))
+numB=(int(input("\n Digite o segundo numero: ")))
+result=numA + numB
+print("O resultado da sua conta é:",result)
+
+
+#Exercicio02
+print ("\n Exercicio 02")
+sal01=(float(input("\n Digite seu Salário: ")))
+if sal01 <=500:
+    aum01=sal01*0.15
+    aum15=sal01+aum01
+    print ("Seu salario teve um reajuste de 15% ficando em:", aum15)
+    if sal01 >500:
+        aum02=sal01*0.10
+        aum15=sal01+aum02
+        print ("Seu salario teve um reajuste de 10% ficando em:", aum10)
+else:
+    sal01 >1000
+    aum03=sal01*0.05
+    aum100=sal01+aum03
+    print ("Seu salario teve um reajuste de 5% ficando em:", aum100)
+
+
+#Exercicio03
+print ("\n Exercicio 03")
+
+num1=(int(input("\n Digite um numero: ")))
+num2=(int(input("\n Digite um segundo numero ")))
+num3=(int(input("\n Digite um terceiro numero ")))
+
+if num3 > num2 > num1:
+    print("O Numero 3 é maior: ",num3)
+elif num2 > num1 > num3:
+    print("O Numero 2 é maior: ",num2)
+else:
+    print("O Numero 1 é maior: ",num1)
+
+
+#Exercicio04
+
+cont= 0
+while cont < 290:
+    if cont %2 == 1:
+        print(cont)
+    cont = cont +1
