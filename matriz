@@ -1,0 +1,40 @@
+vetor=["a",1,2+3j,"maria","FATEC",4.9]
+vetor[2]
+vetor[0]
+vetor[-1]
+vetor[-2]
+vetor[2:4]
+vetor[:3]
+vetor[3:]
+vetor
+vetor[3]="maria"
+vetor
+vetor[3]=="maria"
+>>> for i in vetor:
+	print(i)
+
+>>> for receptor in vetor:
+	print(receptor)
+>>> receptor
+>>> i
+>>> for i in vetor:
+	if i=="maria":
+		print("Te achei danada")
+>>> len(vetor)
+>>> lista=vetor
+>>> lista
+>>> vetor
+>>> bom=list("Maria")
+>>> bom
+>>> bom[3]
+>>> lista[2]="casa"
+>>> lista
+>>> vetor
+>>> zeca=vetor[:]
+>>> zeca
+>>> vetor
+>>> lista
+>>> vetor[3]="João"
+>>> vetor
+>>> lista
+>>> zeca
