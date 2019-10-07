@@ -38,3 +38,9 @@ vetor[3]=="maria"
 >>> vetor
 >>> lista
 >>> zeca
+
+
+pc=list("fatec-osasco")
+pc
+len(pc)
+busca=[None]*12
