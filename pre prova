@@ -50,3 +50,105 @@ while cont < 290:
     if cont %2 == 1:
         print(cont)
     cont = cont +1
+
+
+
+
+print("Gabarito da Prova 1 LabDes1 realizada em 07/10/2019")
+#Exercício 1
+print("Exercício 1")
+qta=float(input("entre com a qtde atual ==> \n"))
+qtmax=float(input("entre com a qtde max ==> \n"))
+qtmin=float(input("entre com a qtde min ==> \n"))
+qtmed=(qtmax+qtmin)/2
+if qta>=qtmed:
+    print("Não efetuar a compra")
+else:
+    print("Efetuar compra")
+#Exercício 2
+print("Exercício 2")
+i=int(input("entre com valor de i ==> \n"))
+a=float(input("entre com a ==> \n"))
+b=float(input("entre com b==> \n"))
+c=float(input("entre com c ==> \n"))
+if i==1:
+    if a>b and a>c:
+        if b>c:
+            print(c,b,a)
+        else:
+            print(b,c,a)
+    elif b>a and b>c:
+        if a>c:
+            print(c,a,b)
+        else:
+            print(a,c,b)
+    else:
+        if a>b:
+            print(b,a,c)
+        else:
+            print(a,b,c)
+    
+elif i==2:
+    if a>b and a>c:
+        if b>c:
+            print(a,b,c)
+        else:
+            print(a,c,b)
+    elif b>a and b>c:
+        if a>c:
+            print(b,a,c)
+        else:
+            print(b,c,a)
+    else:
+        if a>b:
+            print(c,a,b)
+        else:
+            print(c,b,a)
+elif i==3:
+    if a>b and a>c:
+        print(b,a,c)
+    elif b>a and b>c:
+        print(a,b,c)
+    else:
+        print(a,c,b)
+#Exercício 3
+print("Exercício 3")
+i=float(input("entre com o índice de poluição ==> \n"))
+if i<0.3:
+    print("1 --> Trabalha \n 2 --> Trabalha \n 3 --> trabalha")
+elif i>=0.3 and i<0.4:
+    print("1 --> Para \n 2 --> Trabalha \n 3 --> trabalha")
+elif i>=0.4 and i<0.5:
+    print("1 --> Para \n 2 --> Para \n 3 --> trabalha")
+else:
+    print("1 --> Para \n 2 --> Para \n 3 --> Para")
+#Exercício 4
+print("Exercício 4")
+controle=50
+qtdeval=0
+soma=0
+while controle<=70:
+    soma=soma+controle
+    qtdeval=qtdeval+1
+    controle=controle+1
+media=(soma/qtdeval)
+print("O valor da soma é",soma)
+print("O valor da media é %5.2f"%media)
+#Exercício 5
+print("Exercício 5")
+nome=input("entre com seu nome ==> \n")
+qht=int(input("entre com a qtde horas trabalhadas ==> \n"))
+vht=float(input("entre com a valor hora trabalhada ==> \n"))
+if qht>120:
+    vht=vht*1.6
+sb=(vht*qht)
+if sb>2000:
+    inss=sb*0.12
+else:
+    inss=sb*0.08
+if sb>2500:
+    ir=sb*0.2
+else):
+    ir=sb*0.15
+sl=sb-inss-ir
+print("O seu nome é %12s o seu salário bruto é de %6.2f e o seu salário liquido é de %6.2f"%(nome,sb,sl)
