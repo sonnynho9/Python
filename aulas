@@ -1,0 +1,45 @@
+Aula de 04Nov19
+Funções
+
+def soma(a,b):
+	print(a+b)
+
+def soma(a,b):
+	return(a + b)
+
+def espar(x):
+	return(x%2==0)
+
+def espar(x):
+	return(x%2==0)
+
+
+def par_ou_impar(x):
+	if espar(x)==True):
+	       return “par”
+    else:
+	       return “ímpar”
+
+def pesquise(lista,valor):
+    for x,e in enumerate(lista):
+        if e == valor:                                    
+            return x
+    return None
+
+globo="Vale em todo o código"
+def imprime_cabecalho1():
+    local="so vale aqui dentro"
+    print(globo)
+    print("-" * len(EMPRESA))
+def imprime_cabecalho2():
+    local="so vale aqui dentro"
+    print(globo)
+    print("-" * len(EMPRESA))	
+
+def faixa_int(min,max):
+    while True:
+        v=int(input("digite valor"))
+        if v<min or v>max:
+            print("invalido - valor entre %d e %d"%(min,max))           
+        else:
+            return print("Validado o valor %s"%v)
