@@ -43,3 +43,42 @@ def faixa_int(min,max):
             print("invalido - valor entre %d e %d"%(min,max))           
         else:
             return print("Validado o valor %s"%v)
+print(33*"*")
+print("*** Bem vindo ao jogo da Forca***")
+print("Versão prof Flávio")
+print(33*"*")
+#ps variável que guarda a palavra secreta
+ps="Banana"
+#Lps é a lista da com a palavra secreta 
+Lps=list(ps.upper())
+#la é a lista que armazena/controla as letras acertadas
+la=len(Lps)*["_"]
+acertou=False
+enforcou=False
+erros=0
+while (not acertou and not enforcou):
+    chute=input("Qual a letra?")
+    posicao=0
+    if chute.upper() in Lps:
+        for letra in Lps:
+            if chute.upper() == letra.upper():
+                la[posicao]=letra
+            posicao+=1
+    else:
+        erros +=1
+    if Lps==la:
+        acertou=True
+    elif erros>=5:
+        enforcou=True
+    print(la)
+if acertou==True:
+    print("parabens vc descobriu a palavra secreta")
+else:
+    print("vc perdeu")
+    
+print("fim do jogo")
+
+
+
+
+
